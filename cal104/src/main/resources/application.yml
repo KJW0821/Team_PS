@@ -1,0 +1,13 @@
+spring:
+  datasource:
+    # 나중에 변경
+    url: jdbc:mysql://localhost:3306/dbname
+    username: username
+    password: password
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+  # DB 생성전 우회
+  autoconfigure:
+    exclude: org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration
