@@ -23,6 +23,16 @@ media
 # C extensions
 *.so
 
+# Gradle
+build/
+.gradle/
+*.jar
+*.war
+
+# IDE Settings
+.idea/
+*.iml
+
 # Distribution / packaging
 .Python
 build/
