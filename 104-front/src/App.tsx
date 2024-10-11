@@ -3,6 +3,7 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import { GoogleLogin } from '@react-oauth/google'
+import { Link } from 'react-router-dom'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -39,6 +40,9 @@ function App() {
         useOneTap
         auto_select
       />
+      <Link to="home">
+        <button>캘린더 페이지로</button>
+      </Link>
     </>
   )
 }
