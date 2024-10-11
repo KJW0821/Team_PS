@@ -1,4 +1,15 @@
 {
+  "types": ["node"],
+  "compilerOptions": {
+    "baseUrl": ".",
+
+    "paths": {
+      "@/*": ["src/*"],
+      "@components/*": ["src/components/*"],
+      "@styles/*": ["src/styles/*"],
+      "@assets/*": ["src/assets/*"] // 추가
+    }
+  },
   "files": [],
   "references": [
     { "path": "./tsconfig.app.json" },
